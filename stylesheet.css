@@ -37,7 +37,7 @@ ul{
     height:100px;
 }
 
-#topContainer h1{
+#mainTitle{
     font-weight: bold;
     font-size:50px;
     line-height: 75px;
@@ -76,6 +76,7 @@ ul{
     line-height: 21px;
     margin:0 auto;
     display: block;
+    resize:none;
 }
 
 #startButton{
@@ -146,6 +147,7 @@ ul{
     border-bottom: #929090 solid 1px;
     outline: none;
     transition-duration:0.1s;
+    border-radius: 0;
 }
 
 #inputBox:focus{
@@ -183,4 +185,48 @@ ul{
 
 #quizDiv{
     display: none;
+}
+
+/* スマホ用 */
+@media(max-width:500px){
+    #mainTitle{
+        margin:0;
+        padding:10px 0 0;
+        font-size: 30px;
+        line-height:30px;
+    }
+    #topContainer{
+        height:50px;
+    }
+    #wordData{
+        height:100px;
+        width:100%;
+    }
+    #quizContainer{
+        height:450px;
+    }
+    #bottomContainer{
+        padding-bottom:0;
+    }
+    #mainContainer{
+        height:auto;
+    }
+    #inputBox{
+        font-size:30px;
+        display:block;
+        margin:10px auto;
+        width:200px;
+        text-align:center;
+    }
+    #quizText{
+        padding-top: 40px;
+    }
+    #answerText{
+        margin-bottom: 20px;
+    }
+    #answerButton{
+        display:block;
+        margin:10px auto;
+        width:200px;
+    }
 }
