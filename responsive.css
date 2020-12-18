@@ -1,0 +1,120 @@
+
+/* スマホ用 */
+@media(max-width:500px){
+    #wrapper{
+        height:100vh;
+        width:100%;
+    }
+
+    #mainContainer{
+        height:100%;
+        width:100%;
+    }
+
+    #topContainer{
+        height:10%;
+        width:100%;
+    }
+
+    #contentsContainer{
+        height:70%;
+        width:100%;
+    }
+
+    #bottomContainer{
+        height:20%;
+        width:100%;
+    }
+    
+    #mainTitle{
+        margin:0;
+        padding:10px 0 0;
+        font-size: 30px;
+        line-height:30px;
+    }
+
+    /* readyDiv */
+    #readyDiv{
+        height:100%;
+    }
+
+    #description{
+        height:50%;
+    }
+
+    #wordData{
+        height:100px;
+        width:100%;
+    }
+
+    #checkBox{
+        padding: 10px 0 0;
+    }
+
+    /* quizDiv */
+    #quizDiv{
+        width:100%;
+        height:100%;
+    }
+
+    #quizText{
+        padding-top: 40px;
+    }
+
+    #answerText{
+        margin-bottom: 20px;
+    }
+
+    #answerButton{
+        margin:10px 0 0;
+        width:80%;
+    }
+
+    #inputBox{
+        font-size:30px;
+        width:80%;
+        text-align:center;
+    }
+
+    /* resultDiv */
+    #resultDiv{
+        width:100%;
+        height:100%;
+    }
+
+    #resultMessage{
+        padding:0;
+        height:50%;
+        vertical-align: middle;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #resultMessage p{
+        font-size:20vw;
+    }
+    
+    #resultOption{
+        padding:0;
+        margin:0;
+        height:50%;
+        widows: 50%;
+    }
+
+    #resultOption input{
+        width:100%;
+    }
+
+    /* bottomContainer */
+    #bottomContainer{
+        padding-bottom:0;
+    }
+
+
+
+    #checkBox{
+        font-size:16px;
+        line-height:24px;
+    }
+}

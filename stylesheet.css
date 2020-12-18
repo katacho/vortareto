@@ -14,7 +14,13 @@ button, input, select, textarea {
     letter-spacing: 1px;
 }
 
+p{
+    margin:0;
+}
 
+body{
+    margin:0;
+}
 
 li{
     list-style: none;
@@ -29,8 +35,9 @@ ul{
 
 #mainContainer{
     text-align: center;
-    margin:0 20px;
+    padding:10px 10px;
     height:800px;
+    box-sizing: border-box;
 }
 
 #topContainer{
@@ -47,9 +54,9 @@ ul{
 
 #mainContainer h2{
     font-weight: normal;
-    font-size:18px;
+    font-size:16px;
     margin:0;
-    line-height: 27px;
+    line-height: 150%;
 }
 
 #description h3{
@@ -57,14 +64,14 @@ ul{
     font-weight: normal;
     font-size:16px;
     margin:20px auto 10px;
-    line-height: 24px;
+    line-height: 150%;
     width:90px;
 }
 
 #description p{
     margin:0 0 30px;
     font-size:14px;
-    line-height: 21px;
+    line-height: 150%;
 }
 
 #wordData{
@@ -77,6 +84,7 @@ ul{
     margin:0 auto;
     display: block;
     resize:none;
+    box-sizing: border-box;
 }
 
 #startButton{
@@ -95,7 +103,7 @@ ul{
 
 #checkBox{
     padding:40px 0 0;
-    margin:0 0 20px;
+    margin:0px;
     font-size:20px;
     height:30px;
     line-height: 45px;
@@ -106,7 +114,7 @@ ul{
     line-height: 21px;
 }
 
-#quizContainer{
+#contentsContainer{
     height:530px;
     margin:0;
 }
@@ -164,10 +172,13 @@ ul{
     display: none;
 }
 
-#message{
+#resultMessage{
+    padding:100px 0 0;
+}
+
+#resultMessage p{
     color:#49b460;
     font-size:80px;
-    padding:100px 0 0;
 }
 
 #resultOption{
@@ -185,48 +196,4 @@ ul{
 
 #quizDiv{
     display: none;
-}
-
-/* スマホ用 */
-@media(max-width:500px){
-    #mainTitle{
-        margin:0;
-        padding:10px 0 0;
-        font-size: 30px;
-        line-height:30px;
-    }
-    #topContainer{
-        height:50px;
-    }
-    #wordData{
-        height:100px;
-        width:100%;
-    }
-    #quizContainer{
-        height:450px;
-    }
-    #bottomContainer{
-        padding-bottom:0;
-    }
-    #mainContainer{
-        height:auto;
-    }
-    #inputBox{
-        font-size:30px;
-        display:block;
-        margin:10px auto;
-        width:200px;
-        text-align:center;
-    }
-    #quizText{
-        padding-top: 40px;
-    }
-    #answerText{
-        margin-bottom: 20px;
-    }
-    #answerButton{
-        display:block;
-        margin:10px auto;
-        width:200px;
-    }
 }
