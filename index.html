@@ -8,69 +8,67 @@
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 
 <body>
-    <main>
-        <div id="mainContainer">
-            <div id="topContainer">
-                <h1>Vortareto</h1>
-            </div>
-            <div id=quizContainer>
-                <div id="readyDiv">
-                    <div id="description">
-                        <h2>Bonvolu enigi parojn de vorto kaj signifo dividinte per spaceto aŭ Tab.</h2>
-                        <h3>Ekzemplo</h3>
-                        <p>
-                            aminda かわいい<br>
-                            knabino 少女<br>
-                            sufoki シメる<br>
-                            ...<br>
+    <div id="wrapper">
+            <div id="mainContainer">
+                <div id="topContainer">
+                    <h1 id="mainTitle">Vortareto</h1>
+                </div>
+                <div id=contentsContainer>
+                    <div id="readyDiv">
+                        <div id="description">
+                            <h2>Bonvolu enigi parojn de vorto kaj signifo dividinte per spaceto aŭ Tab.</h2>
+                            <h3>Ekzemplo</h3>
+                            <p>
+                                sinteno 態度<br>
+                                sufoki シメる<br>
+                                ...<br>
+                            </p>
+                        </div>
+
+                        <p><textarea id="wordData"></textarea></p>
+                        <input type="button" id="startButton" value="Lernu!">
+                    </div>
+
+                    <div id="quizDiv">
+                        <p id="quizText"></p>
+                        <p id="checkIcons">
+                            <span class="material-icons" id="checkIcon1"></span>
+                            <span class="material-icons" id="checkIcon2"></span>
                         </p>
+                        <p id="answerText"></p>
+                        <form id="inputForm">
+                            <input type="text" id="inputBox" autocomplete="off">
+                            <input type="submit" id="answerButton" value="Respondu">
+                        </form>
+
                     </div>
+                    <div id="resultDiv">
+                        <div id="resultMessage"><p>Perfecte!</p></div>
+                        <div id="resultOption">
+                            <ul>
+                                <li><input type="button" id="retryButton" value="Lernu la samajn vortojn denove."></li>
+                                <li><input type="button" id="newButton" value="Lernu aliajn vortojn."></li>
+                            </ul>
+                        </div>
 
-                    <p><textarea id="wordData"></textarea></p>
-                    <input type="button" id="startButton" value="Lernu!">
-                </div>
 
-                <div id="quizDiv">
-                    <p id="quizText"></p>
-                    <p id="checkIcons">
-                        <span class="material-icons" id="checkIcon1"></span>
-                        <span class="material-icons" id="checkIcon2"></span>
-                    </p>
-                    <p id="answerText"></p>
-                    <form id="inputForm">
-                        <input type="text" id="inputBox" autocomplete="off">
-                        <input type="submit" id="answerButton" value="Respondu">
-                    </form>
-
-                </div>
-                <div id="resultDiv">
-                    <div id="message">Perfecte!</div>
-                    <div id="resultOption">
-                        <ul>
-                            <li><input type="button" id="retryButton" value="Lernu la samajn vortojn denove."></li>
-                            <li><input type="button" id="newButton" value="Lernu aliajn vortojn."></li>
-                        </ul>
                     </div>
-    
-    
                 </div>
-            </div>
 
-            <div id="bottomContainer">
-                <div id="checkBox">
-                    <input type="checkbox" id="juliCheck">Juliamo
-                    <input type="checkbox" id="esCheck" checked>Esperanta reĝimo
+                <div id="bottomContainer">
+                    <div id="checkBox">
+                        <input type="checkbox" id="juliCheck">Juliamo
+                        <input type="checkbox" id="esCheck" checked>Esperanta reĝimo
+                    </div>
+                    <p id="dsc2">Oni povas uzi 'gx' aŭ 'g^' anstataŭ 'ĝ' kiom ri respondas en la Esperanta reĝimo.</p>
                 </div>
-                <p id="dsc2">Oni povas uzi 'gx' aŭ 'g^' anstataŭ 'ĝ' kiom ri respondas en la Esperanta reĝimo.</p>
+
             </div>
-
-        </div>
-
-    </main>
-
+    </div>
     <script type="text/javascript" src="code.js"></script>
     <noscript>
         <p>Bonvolu ebligi Ĝavoskripton!</p>
