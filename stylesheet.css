@@ -1,199 +1,216 @@
 @font-face{
     font-family: 'Juliamo';
     src: url('https://dl.dropboxusercontent.com/s/5me44aeb19mxm6e/juliamo.woff') format('woff');
+    
+}
+
+*{
+    color:#414141;
+    letter-spacing: 1.5px;
+    line-height: 150%;
+}
+
+
+p,h1, h2{
+    font-weight: normal;
+    padding:0;
+    margin: 0;
 }
 
 button, input, select, textarea {
     font-family : inherit;
     letter-spacing: inherit;
-    font-size : 100%;
+    box-sizing: border-box;
+    font-size:16px
 }
 
-*{
-    color:#414141;
-    letter-spacing: 1px;
-}
-
-p{
+li, ul{
+    list-style: none;
+    padding:0;
     margin:0;
+}
+
+.btn{
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: solid 1px;
+    height:60px;
+    width: 400px;
+    font-size: 20px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+select{
+    border-radius: none;
+    border: solid ;
+    background-color: white;
 }
 
 body{
+    height:100vh;
+    width:100vw;
     margin:0;
-}
-
-li{
-    list-style: none;
     padding:0;
 }
 
-
-ul{
-    padding:0;
-    margin:0;
-}
-
-#mainContainer{
-    text-align: center;
-    padding:10px 10px;
-    height:800px;
-    box-sizing: border-box;
-}
-
-#topContainer{
-    height:100px;
-}
-
-#mainTitle{
-    font-weight: bold;
-    font-size:50px;
-    line-height: 75px;
-    margin:0;
-    padding:20px 0 0;
-}
-
-#mainContainer h2{
-    font-weight: normal;
-    font-size:16px;
-    margin:0;
-    line-height: 150%;
-}
-
-#description h3{
-    border-bottom: 1px solid;
-    font-weight: normal;
-    font-size:16px;
-    margin:20px auto 10px;
-    line-height: 150%;
-    width:90px;
-}
-
-#description p{
-    margin:0 0 30px;
-    font-size:14px;
-    line-height: 150%;
-}
-
-#wordData{
-    width: 200px;
-    height: 200px;
-    padding: 5px;
-    border-radius: 5px;
-    font-size:14px;
-    line-height: 21px;
-    margin:0 auto;
-    display: block;
-    resize:none;
-    box-sizing: border-box;
-}
-
-#startButton{
-    margin:10px 0 0;
-    height: 50px;
-    width:80px;
-    font-size:16px;
-    line-height: 24px;
-}
-
-#bottomContainer{
-    margin:0;
+#wrapper{
+    padding: 10px;
+    height:100%;
     width:100%;
-    height:150px;
+    box-sizing: border-box;
+    text-align: center;
+}
+#mainContainer{
+    height:100%;
+    width:100%;
+    position: relative;
+}
+#title{
+    font-size: 40px;
+    margin-bottom:100px;
 }
 
-#checkBox{
-    padding:40px 0 0;
-    margin:0px;
-    font-size:20px;
-    height:30px;
-    line-height: 45px;
+/* readyDiv */
+#readyDiv{
+    width:100%;
+    height:100%;
 }
 
-#dsc2{
-    font-size:14px;
-    line-height: 21px;
+#startBtn{
+    background-color: rgb(158, 236, 158);
+    border: none;
 }
 
-#contentsContainer{
-    height:530px;
-    margin:0;
+#setSelect{
+    height: 60px;
+    width:400px;
+    margin-bottom: 60px;
+    
+    padding: 10px;
 }
 
 
+/* editDiv */
+#editDiv{
+    width:100%;
+    height:100%;
+}
+
+#description{
+    margin-bottom: 10px;
+    width:430px;
+    margin: 0 auto 10px;
+}
+
+/* textarea */
+#placeholderDiv{
+    position: absolute;
+    top:11px;
+    left:11px;
+    opacity: 0.7;
+    text-align: left;
+}
+
+.textareaDiv{
+    margin: 0 auto;
+    position: relative;
+    height:200px;
+    width:400px;
+}
+
+#dataArea{
+    width:100%;
+    height:100%;
+    font-size:16px;
+    padding:10px;
+    resize:none;
+    border:solid 1px;
+}
+
+#nameBox{
+    margin:10px 0;
+    padding:10px;
+    width:400px;
+    border:solid 1px;
+    font-size:16px;
+}
+
+#finishBtn{
+    background-color: rgb(138, 228, 138);
+    border: none;
+}
+
+#deleteBtn{
+    background-color: rgb(228, 106, 132);
+    color:white;
+    border:none
+}
+
+/* quizDiv */
+#quizDiv{
+    width: 100%;
+    height:100%;
+}
 
 #quizText{
-    padding:100px 0 0;
-    margin:0;
     font-size:50px;
-    line-height:50px;
-    height:50px;
+}
+
+#checkIcon{
+    font-size: 16px;
 }
 
 #answerText{
-    margin:20px 0 50px;
-    font-size:40px;
-    height:40px;
-    visibility:hidden;
-}
-
-#answerButton{
-    box-sizing: border-box;
+    font-size: 30px;
     height:50px;
-    width:100px;
-    margin:0;
+    transition-duration: 300ms;
+    transition-property:opacity;
 }
 
 #inputBox{
-    height:60px;
-    width:200px;
     font-size:30px;
-    line-height:30px;
-    margin:0;
-    border-right:none;
-    border-left:none;
-    border-top:none;
-    border-bottom: #929090 solid 1px;
+    width:400px;
+    margin-bottom: 10px;
+    text-align: center;
+    border:none;
+    border-bottom: solid #999292 2px;
     outline: none;
-    transition-duration:0.1s;
-    border-radius: 0;
+    padding:5px;
+    transition-duration: 200ms;
+    transition-property: border-width, border-color;
 }
 
 #inputBox:focus{
-    border-bottom: #333333 solid 3px;
+    border-bottom: solid 4px;
 }
 
-#checkIcons{
-    margin:30px 0 0;
-
-}
-
-/*結果画面*/
+/* resultDiv */
 #resultDiv{
-    display: none;
-}
-
-#resultMessage{
-    padding:100px 0 0;
+    width: 100%;
+    height:100%;
 }
 
 #resultMessage p{
-    color:#49b460;
     font-size:80px;
+    color:rgb(158, 236, 158);
+    margin-bottom:100px;
 }
 
-#resultOption{
-    margin:100px 0 0;
+/* bottomContainer */
+
+#configDiv{
+    height:100%;
+    width:100%;
 }
 
-#resultOption li{
-    margin:0 0 30px;
+/* #configBtn{
+    height:40px;
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
 }
 
-#resultOption input{
-    width:400px;
-    height:60px
-}
-
-#quizDiv{
-    display: none;
-}
+ */
