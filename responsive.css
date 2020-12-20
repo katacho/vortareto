@@ -1,120 +1,54 @@
 
 /* スマホ用 */
 @media(max-width:500px){
-    #wrapper{
-        height:100vh;
+    .btn, #setSelect{
         width:100%;
     }
-
-    #mainContainer{
-        height:100%;
-        width:100%;
-    }
-
-    #topContainer{
-        height:10%;
-        width:100%;
-    }
-
-    #contentsContainer{
-        height:70%;
-        width:100%;
-    }
-
-    #bottomContainer{
-        height:20%;
-        width:100%;
-    }
-    
-    #mainTitle{
-        margin:0;
-        padding:10px 0 0;
-        font-size: 30px;
-        line-height:30px;
-    }
-
-    /* readyDiv */
-    #readyDiv{
-        height:100%;
+    #setSelect{
+        margin-bottom: 40px;
     }
 
     #description{
-        height:50%;
+        width: 100%;
+        font-size:14px;
     }
 
-    #wordData{
-        height:100px;
+    .textareaDiv{
+        width:100%;        
+    }
+
+    #dataArea{
         width:100%;
+    }
+
+    #nameBox{
+        width:100%;
+
     }
 
     #checkBox{
-        padding: 10px 0 0;
+        text-align: left;
+        width:200px;
+        margin:100px auto;
     }
-
-    /* quizDiv */
-    #quizDiv{
-        width:100%;
-        height:100%;
+    #checkBox li{
+        margin-bottom: 20px;
+    }
+    #dsc2{
+        font-size: 11px;
     }
 
     #quizText{
-        padding-top: 40px;
+        padding-top: 100px;
     }
 
-    #answerText{
-        margin-bottom: 20px;
-    }
-
-    #answerButton{
-        margin:10px 0 0;
-        width:80%;
-    }
 
     #inputBox{
-        font-size:30px;
-        width:80%;
-        text-align:center;
-    }
-
-    /* resultDiv */
-    #resultDiv{
-        width:100%;
-        height:100%;
-    }
-
-    #resultMessage{
-        padding:0;
-        height:50%;
-        vertical-align: middle;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #resultMessage p{
-        font-size:20vw;
-    }
-    
-    #resultOption{
-        padding:0;
-        margin:0;
-        height:50%;
-        widows: 50%;
-    }
-
-    #resultOption input{
         width:100%;
     }
 
-    /* bottomContainer */
-    #bottomContainer{
-        padding-bottom:0;
-    }
+    #title{
+        margin-bottom:30px;
 
-
-
-    #checkBox{
-        font-size:16px;
-        line-height:24px;
     }
 }
