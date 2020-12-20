@@ -30,7 +30,7 @@ class MyStorage {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-
+    alert(1);
 
 
     const startBtn = document.getElementById('startBtn');
