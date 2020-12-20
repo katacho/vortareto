@@ -1,5 +1,6 @@
 'use strict';
 
+    alert(1);
 //Web Storage
 class MyStorage {
     constructor(app) {
@@ -30,9 +31,6 @@ class MyStorage {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    alert(1);
-
-
     const startBtn = document.getElementById('startBtn');
     const editBtn = document.getElementById('editBtn');
     const answerBtn = document.getElementById('answerBtn');
