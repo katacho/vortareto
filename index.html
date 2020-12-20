@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <title>Vortareto</title>
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -13,65 +15,97 @@
 
 <body>
     <div id="wrapper">
-            <div id="mainContainer">
-                <div id="topContainer">
-                    <h1 id="mainTitle">Vortareto</h1>
+        <div id="mainContainer">
+            <div id="readyDiv">
+                <div id="TitleContainer">
+                    <h1 id="title">Vortareto</h1>
                 </div>
-                <div id=contentsContainer>
-                    <div id="readyDiv">
-                        <div id="description">
-                            <h2>Bonvolu enigi parojn de vorto kaj signifo dividinte per spaceto aŭ Tab.</h2>
-                            <h3>Ekzemplo</h3>
-                            <p>
-                                sinteno 態度<br>
-                                sufoki シメる<br>
-                                ...<br>
-                            </p>
-                        </div>
-
-                        <p><textarea id="wordData"></textarea></p>
-                        <input type="button" id="startButton" value="Lernu!">
-                    </div>
-
-                    <div id="quizDiv">
-                        <p id="quizText"></p>
-                        <p id="checkIcons">
-                            <span class="material-icons" id="checkIcon1"></span>
-                            <span class="material-icons" id="checkIcon2"></span>
-                        </p>
-                        <p id="answerText"></p>
-                        <form id="inputForm">
-                            <input type="text" id="inputBox" autocomplete="off">
-                            <input type="submit" id="answerButton" value="Respondu">
-                        </form>
-
-                    </div>
-                    <div id="resultDiv">
-                        <div id="resultMessage"><p>Perfecte!</p></div>
-                        <div id="resultOption">
-                            <ul>
-                                <li><input type="button" id="retryButton" value="Lernu la samajn vortojn denove."></li>
-                                <li><input type="button" id="newButton" value="Lernu aliajn vortojn."></li>
-                            </ul>
-                        </div>
+                <div id="inputContainer">
+                    <ul>
+                        <li><select id="setSelect">
+                                <option disabled selected value='unselected'>---Electu aron---</option>
+                            </select></li>
+                        <li><input type="button" id="editBtn" value="Redakti ĉi tiu aron" class="btn"></li>
+                        <li><input type="button" id="makeBtn" value="Krei novan aron" class="btn"></li>
+                        <li><input type="button" id="configBtn" class="btn" value="Agordoj(設定)"></li>
+                        <li><input type="button" id="startBtn" value="Lerni ĉi tiu aron" class="btn"></li>
+                    </ul>
+                
+            </div>
 
 
-                    </div>
-                </div>
 
-                <div id="bottomContainer">
-                    <div id="checkBox">
-                        <input type="checkbox" id="juliCheck">Juliamo
-                        <input type="checkbox" id="esCheck" checked>Esperanta reĝimo
-                    </div>
-                    <p id="dsc2">Oni povas uzi 'gx' aŭ 'g^' anstataŭ 'ĝ' kiom ri respondas en la Esperanta reĝimo.</p>
-                </div>
+
 
             </div>
+            <div id="editDiv">
+                <div id="description">
+                    <p>Bonvolu dividi vorton kaj signifon per spaceto aŭ Tab, kaj dividi parojn per linifino .</p>
+                </div>
+                <ul>
+                    <li>
+                        <div class="textareaDiv">
+                            <textarea id="dataArea" placeholder=""></textarea>
+                            <div id="placeholderDiv">
+                                Ekzemplo:<br>
+                                spitema 反抗的な<br>
+                                sinteno 態度<br>
+                                sufoki シメる<br>
+                            </div>
+                        </div>
+                    </li>
+                    <li> <input type="text" id="nameBox" placeholder="Nomo" autocomplete="off"></li>
+                    <li> <input type="button" id="finishBtn" value="Preta" class="btn"></li>
+                    <li> <input type="button" id="deleteBtn" value="Forigi ĉi tiun aron" class="btn"></li>
+                    <li> <input type="button" id="cancelBtn" value="Nuligi" class="btn"></li>
+                </ul>
+
+            </div>
+            <div id="quizDiv">
+                <p id="quizText"></p>
+                <p id="checkIcons">
+                    <span class="material-icons" id="checkIcon1"></span>
+                    <span class="material-icons" id="checkIcon2"></span>
+                </p>
+                <p id="answerText"></p>
+                <form id="inputForm">
+                    <p><input type="text" id="inputBox" autocomplete="off"></p>
+                    <p><input type="submit" id="answerBtn" value="Respondi" class="btn"></p>
+                </form>
+
+            </div>
+            <div id="resultDiv">
+                <div id="resultMessage">
+                    <p>Perfecte!</p>
+                </div>
+                <div id="resultOption">
+                    <ul>
+                        <li><input type="button" id="retryBtn" value="Lerni la saman aron denove" class="btn">
+                        </li>
+                        <li><input type="button" id="newBtn" value="Lerni alian aron" class="btn"></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="configDiv">
+                <div id="checkBox">
+                    <ul>
+                        <li><input type="checkbox" id="storageCheck">Uzi Web Storage</li>
+                        <li><input type="checkbox" id="juliCheck">Juliamo</li>
+                        <li>
+                            <input type="checkbox" id="esCheck" checked>Esperanta reĝimo
+                            <p id="dsc2">Oni povas uzi 'gx' aŭ 'g^' anstataŭ 'ĝ' en la Esperanta reĝimo.</p>
+                        </li>
+
+                    </ul>
+                </div>
+                <input type="button" id="doneBtn" class="btn" value="Preta">
+
+            </div>
+        </div>
     </div>
     <script type="text/javascript" src="code.js"></script>
     <noscript>
-        <p>Bonvolu ebligi Ĝavoskripton!</p>
+        <p>Bonvolu ebligi javascript!</p>
     </noscript>
 </body>
 
