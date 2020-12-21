@@ -1,4 +1,8 @@
 'use strict';
+
+
+document.addEventListener('DOMContentLoaded', function () {
+
 //Web Storage
 class MyStorage {
     constructor(app) {
@@ -28,9 +32,6 @@ class MyStorage {
     }
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-
-    alert('ｘｘｘ');
 
     const startBtn = document.getElementById('startBtn');
     const editBtn = document.getElementById('editBtn');
@@ -67,8 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const placeholderDiv = document.getElementById('placeholderDiv');
 
     let storage = new MyStorage('vortareto');
-    alert('o');
-    
+
     function isEmpty(obj) {
         return !Object.keys(obj).length;
     }
