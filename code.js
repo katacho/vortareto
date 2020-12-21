@@ -469,7 +469,7 @@ class MyStorage {
     doneBtn.onclick = () => {
         SceneManeger.changeScene('ready');
     }
-
-    SceneManeger.changeScene('ready');
+    alert('ba');
+    //SceneManeger.changeScene('ready');
 });
 
