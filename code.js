@@ -1,8 +1,5 @@
 'use strict';
 
-
-document.addEventListener('DOMContentLoaded', function () {
-
 //Web Storage
 class MyStorage {
     constructor(app) {
@@ -31,6 +28,9 @@ class MyStorage {
         this.storage[this.app] = JSON.stringify(this.data);
     }
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+
 
 
     const startBtn = document.getElementById('startBtn');
@@ -469,7 +469,7 @@ class MyStorage {
     doneBtn.onclick = () => {
         SceneManeger.changeScene('ready');
     }
-    alert('ba');
-    //SceneManeger.changeScene('ready');
+
+    SceneManeger.changeScene('ready');
 });
 
